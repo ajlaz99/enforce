@@ -141,15 +141,7 @@ const memes = [
     areas: ["events"]
   },
 
-  // ===== MARKETING (team lead only 😌) =====
-  {
-    title: "Campaign performance",
-    image: "images/marketing-meme.jpg",
-    type: "image",
-    alt: "",
-    areas: ["marketing"]
-  },
-
+  // ===== MARKETING =====
   {
     title: "reach for the many right",
     image: "images/target-audience.mp4",
