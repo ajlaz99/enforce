@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cENtre FOr maRComms Excellence (ENFORCE)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>cENtre FOr maRComms Excellence (ENFORCE)</h1>
+    <p>welcome to our microsite</p>
+  </header>
+
+  <nav>
+    <a href="index.html">All Memes</a>
+  </nav>
+
+  <section class="filters">
+    <button class="filter-button active" data-area="all" onclick="filterMemes('all', this)">All</button>
+    <button class="filter-button" data-area="brand-creative" onclick="filterMemes('brand-creative', this)">Brand & Creative</button>
+    <button class="filter-button" data-area="internal-communications" onclick="filterMemes('internal-communications', this)">Internal Comms</button>
+    <button class="filter-button" data-area="media-pr" onclick="filterMemes('media-pr', this)">Media & PR</button>
+    <button class="filter-button" data-area="digital-experience" onclick="filterMemes('digital-experience', this)">Digital Experience</button>
+    <button class="filter-button" data-area="events" onclick="filterMemes('events', this)">Events</button>
+    <button class="filter-button" data-area="marketing" onclick="filterMemes('marketing', this)">Marketing</button>
+  </section>
+
+  <main>
+    <div class="gallery" id="gallery"></div>
+  </main>
+
+  <script src="memes.js"></script>
+  <script>
+    const gallery = document.getElementById("gallery");
+
+    function createMemeCard(meme) {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      let media = "";
+
+      if (meme.type === "video") {
+        media = `
+          <video controls muted loop playsinline>
+            <source src="${meme.image}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        `;
+      } else {
+        media = `<img src="${meme.image}" alt="${meme.alt || ""}">`;
+      }
+
+      const areasText = meme.areas && meme.areas.length
+        ? meme.areas.map(area =>
+            area
+              .replaceAll("-", " ")
+              .replace(/\b\w/g, char => char.toUpperCase())
+          ).join(" • ")
+        : "";
+
+      card.innerHTML = `
+        ${media}
+        <div class="caption">
+          <strong>${meme.title}</strong><br>
+          ${meme.caption || ""}
+        </div>
+        ${areasText ? `<div class="tags">${areasText}</div>` : ""}
+      `;
+
+      return card;
+    }
+
+    function displayMemes(list) {
+      gallery.innerHTML = "";
+
+      if (list.length === 0) {
+        gallery.innerHTML = `<p class="empty-message">No memes in this category yet.</p>`;
+        return;
+      }
+
+      list.forEach(meme => {
+        gallery.appendChild(createMemeCard(meme));
+      });
+    }
+
+    function setActiveButton(clickedButton) {
+      const buttons = document.querySelectorAll(".filter-button");
+      buttons.forEach(button => button.classList.remove("active"));
+      clickedButton.classList.add("active");
+    }
+
+    function filterMemes(area, clickedButton) {
+      setActiveButton(clickedButton);
+
+      if (area === "all") {
+        displayMemes(memes);
+        return;
+      }
+
+      const filtered = memes.filter(m => m.areas.includes(area));
+      displayMemes(filtered);
+    }
+
+    displayMemes(memes);
+  </script>
+
+</body>
+</html>
