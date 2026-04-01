@@ -64,7 +64,7 @@ const memes = [
     image: "images/tomorrow.mp4",
     type: "video",
     alt: "",
-    areas: ["media-pr"]
+    areas: ["media-pr", "digital-experience"]
   },
 
   {
