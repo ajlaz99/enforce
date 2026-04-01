@@ -22,7 +22,7 @@ const memes = [
     image: "images/best-for-you.mp4",
     type: "video",
     alt: "",
-    areas: ["digital-experience"]
+    areas: ["digital-experience", "brand-creative", "internal-communications", "media-pr", "events", "marketing"]
   },
 
   // ===== INTERNAL COMMS =====
@@ -47,7 +47,7 @@ const memes = [
     image: "images/comms-carry.mp4",
     type: "video",
     alt: "",
-    areas: ["internal-communications"]
+    areas: ["internal-communications", "digital-experience", "media-pr", "brand-creative", "events", "marketing"]
   },
 
   // ===== MEDIA & PR =====
@@ -97,7 +97,7 @@ const memes = [
     image: "images/photos.mp4",
     type: "video",
     alt: "",
-    areas: ["brand-creative"]
+    areas: ["brand-creative", "digital-experience"]
   },
 
   {
@@ -114,7 +114,7 @@ const memes = [
     image: "images/final-event.mp4",
     type: "video",
     alt: "",
-    areas: ["events"]
+    areas: ["events", "marketing"]
   },
 
   {
@@ -147,7 +147,7 @@ const memes = [
     image: "images/target-audience.mp4",
     type: "video",
     alt: "",
-    areas: ["marketing"]
+    areas: ["marketing", "media-pr", "digital-experience"]
   }
 
 ];
