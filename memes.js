@@ -101,7 +101,7 @@ const memes = [
   },
 
   {
-    title: "i never want to hear you sayyy",
+    title: "copy that?",
     image: "images/no-copy.mp4",
     type: "video",
     alt: "",
