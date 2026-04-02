@@ -1,5 +1,20 @@
 const memes = [
 
+    // ===== DIGITAL EXPERIENCE =====
+  {
+    title: "in your dreams",
+    image: "images/dream-on.mp4",
+    type: "video",
+    areas: ["digital-experience"]
+  },
+
+  {
+    title: "keep it up",
+    image: "images/enthusiasm.mp4",
+    type: "video",
+    areas: ["digital-experience"]
+  },
+  
   {
     title: "you deserve it",
     image: "images/best-for-you.mp4",
@@ -116,20 +131,5 @@ const memes = [
     type: "video",
     areas: ["marketing", "media-pr", "digital-experience"]
   }
-  
-    // ===== DIGITAL EXPERIENCE =====
-  {
-    title: "in your dreams",
-    image: "images/dream-on.mp4",
-    type: "video",
-    areas: ["digital-experience"]
-  },
-
-  {
-    title: "keep it up",
-    image: "images/enthusiasm.mp4",
-    type: "video",
-    areas: ["digital-experience"]
-  },
 
 ];
