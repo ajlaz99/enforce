@@ -17,7 +17,6 @@ https://ajlaz99.github.io/enforce/
 title: "...",
 image: "images/your-file.jpg",
 type: "image",
-caption: "...",
 areas: ["events"]
 }
 ## 🧡
