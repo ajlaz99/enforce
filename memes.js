@@ -67,7 +67,7 @@ const memes = [
   },
 
   {
-    title: "never gonna say goodbye",
+    title: "we know the game, and we're gonna play it",
     image: "images/never.mp4",
     type: "video",
     areas: ["media-pr"]
