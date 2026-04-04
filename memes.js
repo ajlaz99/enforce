@@ -38,7 +38,7 @@ const memes = [
   },
 
   {
-    title: "just waiting for employees to use the random quick link they fought for",
+    title: "go on, use the random quick link you fought for",
     image: "images/sharepoint-wait.jpeg",
     type: "image",
     areas: ["internal-communications"]
