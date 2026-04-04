@@ -26,7 +26,7 @@ const memes = [
     title: "everybody wants to be us",
     image: "images/minimise-the-press.mp4",
     type: "video",
-    areas: ["digital-experience", "brand-creative"]
+    areas: ["digital-experience", "media-pr", "brand-creative"]
   },
 
   // ===== INTERNAL COMMS =====
