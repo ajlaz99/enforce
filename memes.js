@@ -89,7 +89,7 @@ const memes = [
   },
 
   {
-    title: "i never want to hear you say",
+    title: "we want it that way",
     image: "images/photos.mp4",
     type: "video",
     areas: ["brand-creative", "digital-experience", "marketing"]
