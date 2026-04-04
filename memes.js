@@ -22,16 +22,23 @@ const memes = [
     areas: ["digital-experience", "brand-creative", "internal-communications", "media-pr", "events", "marketing"]
   },
 
+  {
+    title: "everybody wants to be us",
+    image: "images/minimise-the-press.mp4",
+    type: "video",
+    areas: ["digital-experience", "brand-creative"]
+  },
+
   // ===== INTERNAL COMMS =====
   {
-    title: "not approved",
+    title: "capiche",
     image: "images/all-company-email.mp4",
     type: "video",
     areas: ["internal-communications"]
   },
 
   {
-    title: "just waiting for employees to engage in the random quick link they fought for",
+    title: "just waiting for employees to use the random quick link they fought for",
     image: "images/sharepoint-wait.jpeg",
     type: "image",
     areas: ["internal-communications"]
@@ -60,7 +67,7 @@ const memes = [
   },
 
   {
-    title: "never gonna sayyy goodbyyye",
+    title: "never gonna say goodbye",
     image: "images/never.mp4",
     type: "video",
     areas: ["media-pr"]
@@ -75,21 +82,21 @@ const memes = [
 
   // ===== BRAND & CREATIVE =====
   {
-    title: "no words",
+    title: "respectfully",
     image: "images/rogue.mp4",
     type: "video",
     areas: ["brand-creative"]
   },
 
   {
-    title: "i never want to hear you sayyy",
+    title: "i never want to hear you say",
     image: "images/photos.mp4",
     type: "video",
-    areas: ["brand-creative", "digital-experience"]
+    areas: ["brand-creative", "digital-experience", "marketing"]
   },
 
   {
-    title: "copy that?",
+    title: "go girl give us nothing",
     image: "images/no-copy.mp4",
     type: "video",
     areas: ["brand-creative"]
@@ -97,7 +104,7 @@ const memes = [
 
   // ===== EVENTS =====
   {
-    title: "never thought this day would come",
+    title: "rare footage of david",
     image: "images/final-event.mp4",
     type: "video",
     areas: ["events", "marketing"]
@@ -126,10 +133,10 @@ const memes = [
 
   // ===== MARKETING =====
   {
-    title: "reach for the many right",
+    title: "reaching for the many",
     image: "images/target-audience.mp4",
     type: "video",
-    areas: ["marketing", "media-pr", "digital-experience"]
+    areas: ["marketing", "media-pr", "digital-experience", "internal-communications"]
   }
 
 ];
